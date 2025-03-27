@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friedrich Nietzsche</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            transition: margin-left 0.3s;
+        }
+        header {
+            background: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+        .menu-btn {
+            position: absolute;
+            left: 20px;
+            top: 15px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background: #333;
+            padding-top: 60px;
+            transition: left 0.3s ease-in-out;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            border-bottom: 1px solid #444;
+            transition: background 0.3s;
+        }
+        .sidebar a:hover {
+            background: #ffd700;
+            color: #222;
+        }
+        .sidebar.show {
+            left: 0;
+        }
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .content-section {
+            margin-bottom: 30px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #222;
+            color: white;
+            margin-top: 20px;
+        }
+        .menu-open {
+            margin-left: 250px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <h1>Friedrich Nietzsche</h1>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+        <a href="javascript:void(0)" onclick="toggleMenu()">✖ Fechar</a>
+        <a href="index.html#inicio">Início</a>
+        <a href="index.html#filosofos">Filósofos</a>
+        <a href="index.html#sobre">Sobre o site</a>
+        <a href="index.html#contato">Contato</a>
+    </div>
+
+    <main id="content">
+        <section class="content-section">
+            <h2>Quem foi Friedrich Nietzsche?</h2>
+            <p>Friedrich Nietzsche (1844-1900) foi um filósofo, poeta e ensaísta alemão, cujas ideias desafiaram profundamente a filosofia ocidental e a moralidade tradicional. Conhecido por suas críticas à religião, à moralidade cristã e às estruturas de poder, Nietzsche se tornou um dos pensadores mais influentes do século XIX e sua obra continua a ter um impacto significativo em muitas áreas do pensamento contemporâneo.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>A Filosofia de Nietzsche</h2>
+            <p>A filosofia de Nietzsche é uma crítica radical à moralidade e à religião tradicionais, em especial o cristianismo, que ele acreditava ser uma moral de escravos que exaltava a fraqueza em detrimento da força e da vitalidade. Nietzsche introduziu uma nova maneira de ver a vida, desafiando as concepções de verdade, moralidade e existência que dominaram o pensamento ocidental por séculos.</p>
+            <p>Uma das suas principais ideias é o conceito do "Super-Homem" (ou *Übermensch*), um ideal de ser humano que transcende os valores tradicionais, criando sua própria moral e vivendo de acordo com a sua própria vontade. Nietzsche também é famoso por seu anúncio da "morte de Deus", o que representa a perda de um sentido absoluto e transcendental da vida, sugerindo que os seres humanos devem encontrar novos valores para viver.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>A Morte de Deus</h2>
+            <p>O conceito de Nietzsche sobre a "morte de Deus" é uma das suas ideias mais radicais e famosas. Em sua obra *A Gaia Ciência*, ele escreve que "Deus está morto", referindo-se ao fato de que as crenças religiosas tradicionais, especialmente o cristianismo, estavam perdendo sua influência e autoridade na vida moderna. A "morte de Deus" não é uma questão literal, mas uma metáfora para a perda da fé em uma moralidade universal e transcendental.</p>
+            <p>Com a morte de Deus, Nietzsche acreditava que a humanidade teria que enfrentar a crise de encontrar novos valores e significado para a vida sem recorrer a crenças religiosas. Isso levou à necessidade de reavaliar todos os valores estabelecidos e criar uma nova moralidade, baseada na afirmação da vida e na busca pela excelência humana.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>O Conceito do Super-Homem (Übermensch)</h2>
+            <p>O *Übermensch*, ou Super-Homem, é um conceito central na filosofia de Nietzsche. Ele representa um ideal de ser humano que supera as limitações da moralidade tradicional e dos valores impostos pela sociedade. O Super-Homem é aquele que cria sua própria moral, vive de acordo com a sua vontade e não é limitado pelas convenções sociais e religiosas.</p>
+            <p>Nietzsche via o Super-Homem como uma figura que abraça a vida em sua totalidade, com todas as suas dificuldades e desafios, sem buscar consolo em ideais transcendentes ou mitos religiosos. Para Nietzsche, o Super-Homem é o modelo para a evolução humana, um ser que constantemente busca se superar e alcançar novos horizontes.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Vontade de Potência</h2>
+            <p>A "vontade de potência" é outro conceito crucial na filosofia de Nietzsche. Ele acreditava que a principal força motivadora dos seres humanos não era a busca pela felicidade ou pela moralidade, mas sim a vontade de exercer poder, dominar a si mesmo e ao mundo ao redor. A vontade de potência não se limita à busca por poder físico ou político, mas também envolve a busca pela autossuperação e pela criação de novos valores.</p>
+            <p>Para Nietzsche, a vontade de potência é a expressão da vitalidade humana. Aqueles que são guiados por essa vontade estão constantemente em busca de crescimento, realização e autoaperfeiçoamento, em vez de seguir as normas e valores impostos pela sociedade.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>O Eterno Retorno</h2>
+            <p>O conceito do "eterno retorno" é uma ideia filosófica que Nietzsche explora em várias de suas obras, especialmente em *Assim Falou Zaratustra*. Ele sugere que a vida, com todos os seus altos e baixos, pode se repetir eternamente, e que devemos viver nossas vidas como se fôssemos obrigados a repeti-las eternamente.</p>
+            <p>Nietzsche não via o eterno retorno como uma doutrina metafísica, mas como um teste existencial. Ele acreditava que, se alguém pudesse aceitar a ideia de viver a mesma vida eternamente, então essa pessoa realmente afirmaria a vida em sua totalidade, sem arrependimentos ou desejos de mudança.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Legado de Nietzsche</h2>
+            <p>Friedrich Nietzsche deixou um legado filosófico que continua a influenciar profundamente a filosofia contemporânea, a literatura, a psicologia e outras áreas do pensamento. Sua crítica à moralidade tradicional e sua defesa da criação de novos valores inspiraram filósofos existencialistas, como Jean-Paul Sartre, e também tiveram impacto em teorias pós-modernas e na psicologia de Sigmund Freud.</p>
+            <p>Embora suas ideias tenham sido mal interpretadas e até distorcidas em vários momentos da história, Nietzsche continua sendo uma figura central no pensamento moderno, questionando as bases da moralidade e incentivando uma reavaliação constante dos valores e das normas sociais.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Grandes Filósofos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var sidebar = document.getElementById("sidebar");
+            var content = document.getElementById("content");
+            sidebar.classList.toggle("show");
+            document.body.classList.toggle("menu-open");
+        }
+    </script>
+
+</body>
+</html>

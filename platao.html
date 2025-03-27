@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platão - Grandes Filósofos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            transition: margin-left 0.3s;
+        }
+        header {
+            background: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+        .menu-btn {
+            position: absolute;
+            left: 20px;
+            top: 15px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background: #333;
+            padding-top: 60px;
+            transition: left 0.3s ease-in-out;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            border-bottom: 1px solid #444;
+            transition: background 0.3s;
+        }
+        .sidebar a:hover {
+            background: #ffd700;
+            color: #222;
+        }
+        .sidebar.show {
+            left: 0;
+        }
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #222;
+            color: white;
+            margin-top: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #ffd700;
+            transform: scale(1.05);
+            color: #222;
+        }
+        .menu-open {
+            margin-left: 250px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <h1>Platão</h1>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+        <a href="javascript:void(0)" onclick="toggleMenu()">✖ Fechar</a>
+        <a href="index.html#inicio">Início</a>
+        <a href="index.html#filosofos">Filósofos</a>
+        <a href="index.html#sobre">Sobre o site</a>
+        <a href="index.html#contato">Contato</a>
+    </div>
+
+    <main id="content">
+        <section class="content">
+            <h2>Quem foi Platão?</h2>
+            <p>Platão (c. 428-348 a.C.) foi um filósofo grego, discípulo de Sócrates e mestre de Aristóteles, sendo um dos maiores pensadores da história da filosofia ocidental. Ele fundou a Academia de Atenas, uma das primeiras escolas de filosofia superior, onde seus discípulos continuaram a tradição filosófica grega.</p>
+
+            <p>Platão escreveu muitos diálogos, nos quais Sócrates, seu mestre, aparece frequentemente como o personagem central. Esses diálogos abordam temas diversos, incluindo política, ética, metafísica, epistemologia e estética. A profundidade e a abrangência de suas ideias tornaram Platão uma figura central na filosofia ocidental, influenciando correntes filosóficas até os dias de hoje.</p>
+
+            <h3>A Teoria das Ideias</h3>
+            <p>Uma das contribuições mais notáveis de Platão para a filosofia é a *Teoria das Ideias* (ou Teoria das Formas), que ele desenvolveu para explicar o que ele via como o verdadeiro conhecimento. Para Platão, o mundo sensível, o mundo que percebemos com nossos sentidos, é imperfeito e transitório. O verdadeiro conhecimento, segundo Platão, não é obtido através da percepção sensorial, mas pela razão, ao acessar o mundo das *formas* ou *ideias*.</p>
+
+            <p>Essas ideias são entidades abstratas, eternas e imutáveis, e representam a essência verdadeira de todas as coisas. Por exemplo, a ideia de *Beleza* ou a *Ideia do Bem* são perfeitas e imutáveis, enquanto as coisas belas e boas no mundo físico são apenas sombras imperfeitas dessas ideias. Platão acreditava que só através da filosofia poderíamos acessar essas formas ideais e alcançar o verdadeiro conhecimento.</p>
+
+            <h3>A República e a Justiça</h3>
+            <p>Na obra *A República*, Platão desenvolve sua visão sobre uma sociedade ideal, baseada na justiça. Para ele, a justiça é alcançada quando cada indivíduo e classe social desempenha o papel para o qual é mais adequado, em harmonia com as outras classes. Platão divide a sociedade em três classes: os governantes (filósofos-reis), que devem ser sábios e justos; os guardiões (soldados), responsáveis pela defesa da cidade; e os produtores (agricultores, artesãos, etc.), que cuidam das necessidades materiais da sociedade.</p>
+
+            <p>Platão também é famoso por sua alegoria da caverna, que aparece em *A República*. Nesse mito, Platão descreve um grupo de prisioneiros acorrentados em uma caverna, observando apenas sombras projetadas na parede. Eles confundem essas sombras com a realidade. Um dos prisioneiros escapa e vê o mundo exterior, percebendo que as sombras são apenas ilusões. Para Platão, isso representa a jornada do filósofo em busca da verdade, que vai além das aparências e das percepções sensoriais.</p>
+
+            <h3>O Mito da Caverna</h3>
+            <p>O *Mito da Caverna* é uma das alegorias mais poderosas de Platão. Nele, ele descreve prisioneiros que estão acorrentados e só podem ver as sombras projetadas na parede de uma caverna. Esses prisioneiros acreditam que as sombras são a realidade, pois não conhecem nada além delas. Quando um prisioneiro é libertado e vê o mundo exterior, ele percebe que as sombras são apenas uma imitação da realidade, que é muito mais rica e complexa.</p>
+
+            <p>O mito representa o processo de aprendizado e o crescimento filosófico. Para Platão, a maioria das pessoas vive "acorrentada" à ilusão, aceitando apenas o que veem ou ouvem, enquanto o verdadeiro filósofo busca o conhecimento que transcende o mundo sensível, alcançando as ideias universais e imutáveis.</p>
+
+            <h3>O Amor Platônico e a Teoria do Amor</h3>
+            <p>Outra contribuição fundamental de Platão para a filosofia é sua concepção do amor, especialmente o que ficou conhecido como "amor platônico". Platão discute o amor em várias de suas obras, especialmente no diálogo *O Banquete*, onde ele descreve o amor como uma escada de ascensão espiritual. O amor começa com a atração física por uma pessoa, mas, através da reflexão filosófica, pode levar ao amor pelas ideias mais elevadas, especialmente pela própria *Ideia do Belo*.</p>
+
+            <h3>Legado de Platão</h3>
+            <p>O legado de Platão é imenso e sua influência permeia muitas áreas do conhecimento, desde a filosofia até a ciência, política, arte e literatura. Sua obra moldou o desenvolvimento do pensamento filosófico na Idade Média, com pensadores como Santo Agostinho, e continuou a ser fundamental durante o Renascimento. Suas ideias sobre ética, política e metafísica foram essenciais para a formação da filosofia ocidental, e muitos dos debates filosóficos modernos ainda se baseiam em suas questões centrais.</p>
+
+            <p>Platão fundou a Academia de Atenas, que foi uma das primeiras instituições de ensino superior do mundo ocidental, e seus ensinamentos continuam a ser estudados em escolas e universidades em todo o mundo.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Grandes Filósofos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var sidebar = document.getElementById("sidebar");
+            var content = document.getElementById("content");
+            sidebar.classList.toggle("show");
+            document.body.classList.toggle("menu-open");
+        }
+    </script>
+
+</body>
+</html>

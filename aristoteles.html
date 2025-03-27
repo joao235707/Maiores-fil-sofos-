@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aristóteles - Grandes Filósofos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            transition: margin-left 0.3s;
+        }
+        header {
+            background: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+        .menu-btn {
+            position: absolute;
+            left: 20px;
+            top: 15px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background: #333;
+            padding-top: 60px;
+            transition: left 0.3s ease-in-out;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            border-bottom: 1px solid #444;
+            transition: background 0.3s;
+        }
+        .sidebar a:hover {
+            background: #ffd700;
+            color: #222;
+        }
+        .sidebar.show {
+            left: 0;
+        }
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            width: 100%;
+            max-width: 350px;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.02);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #222;
+            color: white;
+            margin-top: 20px;
+        }
+        /* Media Queries para adaptação */
+        @media (max-width: 768px) {
+            .container {
+                justify-content: center;
+            }
+            .card {
+                width: 90%;
+                max-width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+        .menu-open {
+            margin-left: 250px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <h1>Aristóteles - Grande Filósofo</h1>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+        <a href="javascript:void(0)" onclick="toggleMenu()">✖ Fechar</a>
+        <a href="index.html#inicio">Início</a>
+        <a href="index.html#filosofos">Filósofos</a>
+        <a href="index.html#sobre">Sobre o site</a>
+        <a href="index.html#contato">Contato</a>
+    </div>
+
+    <main id="content">
+        <section id="inicio">
+            <h2>Aristóteles: O Filósofo Polímata</h2>
+            <p>Aristóteles, nascido em 384 a.C. em Estagira, uma cidade da Macedônia, é considerado um dos maiores filósofos de todos os tempos. Seu legado abrange uma vasta gama de áreas do conhecimento, desde a lógica até a biologia, passando pela ética, metafísica e política. Aristóteles foi discípulo de Platão e tutor de Alexandre, o Grande, o que faz de sua figura uma das mais influentes da história da filosofia ocidental.</p>
+        </section>
+
+        <section id="filosofos">
+            <h2>A Formação e a Influência de Aristóteles</h2>
+            <p>Aristóteles começou seus estudos na Academia de Platão em Atenas, onde permaneceu por cerca de 20 anos. Lá, desenvolveu suas ideias filosóficas, que, em muitos aspectos, contrastavam com as de seu mestre, Platão. Enquanto Platão acreditava que as ideias e formas existiam independentemente da realidade física, Aristóteles propôs que a realidade é composta por substâncias concretas, e o conhecimento vem da experiência sensorial e da observação do mundo.</p>
+
+            <p>Após a morte de Platão, Aristóteles deixou Atenas e passou a viver em várias cidades, incluindo Assos e Mitilene, onde estudou biologia e filosofia natural. Em 343 a.C., Aristóteles foi chamado para ser tutor de Alexandre, o Grande, e essa experiência teve um impacto significativo em seu pensamento, tanto na filosofia quanto na política.</p>
+
+            <p>De volta a Atenas, Aristóteles fundou sua própria escola, o Liceu, onde passou os últimos anos de sua vida ensinando e escrevendo. Suas obras abrangem quase todas as áreas do saber humano e foram estudadas e discutidas por séculos. Sua abordagem empírica e sistemática para entender o mundo foi pioneira e estabeleceu as bases do método científico.</p>
+
+            <h2>Contribuições à Lógica</h2>
+            <p>Uma das maiores contribuições de Aristóteles à filosofia e à ciência foi no campo da lógica. Ele desenvolveu o que hoje é conhecido como "lógica aristotélica" ou "lógica dedutiva", que foi o principal sistema de lógica até o desenvolvimento da lógica moderna no século XIX. Aristóteles formulou o silogismo, uma forma de raciocínio dedutivo que consiste em duas premissas que levam a uma conclusão.</p>
+
+            <p>Exemplo clássico de um silogismo:</p>
+            <ul>
+                <li>Premissa 1: Todos os homens são mortais.</li>
+                <li>Premissa 2: Sócrates é homem.</li>
+                <li>Conclusão: Sócrates é mortal.</li>
+            </ul>
+
+            <p>Além disso, Aristóteles desenvolveu categorias de raciocínio e estudou como as proposições se relacionam entre si. Sua obra *Organon* é uma coleção de textos que sistematiza sua lógica e suas ideias sobre o raciocínio, tendo grande influência no desenvolvimento da ciência e da filosofia.</p>
+
+            <h2>Ética: A Busca pela Felicidade</h2>
+            <p>A ética de Aristóteles, como exposta em sua obra *Ética a Nicômaco*, é baseada na ideia de que o fim último da vida humana é alcançar a felicidade (eudaimonia), que é uma vida de virtude e realização do potencial humano. Ao contrário dos filósofos que afirmavam que a felicidade é alcançada por meio do prazer ou da riqueza, Aristóteles acreditava que a verdadeira felicidade é alcançada através do cultivo das virtudes.</p>
+
+            <p>Para Aristóteles, a virtude é uma disposição habitual para agir de maneira correta, e ela se encontra em um meio-termo entre dois extremos: a excessiva indulgência e a falta de indulgência. Por exemplo, a coragem é a virtude entre a temeridade (excesso de coragem) e a covardia (falta de coragem).</p>
+
+            <p>A ética aristotélica é prática e focada na ação. Aristóteles defendia que a virtude não é algo dado, mas algo que se adquire por meio de hábitos e prática constante. Ele também acreditava que a vida política tem um papel fundamental na promoção da virtude e que o melhor governo seria aquele que ajudasse os cidadãos a alcançarem a felicidade.</p>
+
+            <h2>Política: O Melhor Governo</h2>
+            <p>Em sua obra *Política*, Aristóteles analisou diferentes formas de governo e propôs que a melhor forma de governo é aquela que busca o bem comum, permitindo que os cidadãos vivam de acordo com a virtude. Ele acreditava que o governo deve ser baseado em uma constituição que combine elementos de monarquia, aristocracia e democracia, criando um equilíbrio que evite o abuso de poder.</p>
+
+            <p>Aristóteles classificou as formas de governo em três tipos: monarquia (governo de um), aristocracia (governo dos melhores) e democracia (governo dos muitos). Ele também identificou suas degenerações: tirania (monarquia corrupta), oligarquia (aristocracia corrupta) e demagogia (democracia corrupta).</p>
+
+            <p>Para Aristóteles, o melhor tipo de governo era aquele que tinha como objetivo o bem comum e a promoção das virtudes cívicas, e não o interesse pessoal ou o poder absoluto de uma classe. Ele defendia a ideia de que a política deve estar voltada para o bem-estar dos cidadãos e para a criação de uma comunidade virtuosa.</p>
+
+            <h2>Ciência e Biologia: Observações Naturais</h2>
+            <p>Aristóteles também se destacou como um dos primeiros cientistas naturais. Ele fez observações detalhadas sobre animais e plantas, registrando suas características e comportamentos. Aristóteles acreditava que o estudo da natureza deveria ser baseado na observação empírica e na classificação dos organismos vivos.</p>
+
+            <p>Em *História dos Animais*, ele descreveu diversos tipos de animais e suas funções biológicas, classificando-os de maneira sistemática. Embora muitas de suas classificações e teorias biológicas tenham sido posteriormente refutadas, Aristóteles estabeleceu os fundamentos para a biologia como uma ciência empírica.</p>
+
+            <h2>Legado de Aristóteles</h2>
+            <p>O impacto de Aristóteles na filosofia, na ciência e em várias outras disciplinas é imensurável. Suas ideias dominaram o pensamento ocidental durante a Idade Média e foram redescobertas durante o Renascimento, influenciando profundamente pensadores como Tomás de Aquino e René Descartes. Mesmo nas ciências modernas, muitas de suas ideias continuam a ser debatidas e analisadas.</p>
+
+            <p>Aristóteles deixou uma marca indelével em todas as áreas do conhecimento humano. Sua abordagem racional e sistemática de entender o mundo, seu foco na experiência e na observação, e sua busca incessante pela verdade fazem dele uma das figuras mais centrais na história da filosofia.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Grandes Filósofos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var sidebar = document.getElementById("sidebar");
+            var content = document.getElementById("content");
+            sidebar.classList.toggle("show");
+            document.body.classList.toggle("menu-open");
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sócrates - Grandes Filósofos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            transition: margin-left 0.3s;
+        }
+        header {
+            background: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+        .menu-btn {
+            position: absolute;
+            left: 20px;
+            top: 15px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background: #333;
+            padding-top: 60px;
+            transition: left 0.3s ease-in-out;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            border-bottom: 1px solid #444;
+            transition: background 0.3s;
+        }
+        .sidebar a:hover {
+            background: #ffd700;
+            color: #222;
+        }
+        .sidebar.show {
+            left: 0;
+        }
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .content-section {
+            margin-bottom: 40px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #222;
+            color: white;
+            margin-top: 20px;
+        }
+        .menu-open {
+            margin-left: 250px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <h1>Sócrates</h1>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+        <a href="javascript:void(0)" onclick="toggleMenu()">✖ Fechar</a>
+        <a href="index.html#inicio">Início</a> <!-- Link para a página inicial -->
+        <a href="index.html#filosofos">Filósofos</a>
+        <a href="index.html#sobre">Sobre o site</a>
+        <a href="index.html#contato">Contato</a>
+    </div>
+
+    <main id="content">
+        <section class="content-section">
+            <h2>Quem foi Sócrates?</h2>
+            <p>Sócrates foi um filósofo grego, nascido em Atenas por volta de 470 a.C., e é amplamente reconhecido como um dos maiores pensadores da história ocidental. Ele não deixou obras escritas, mas suas ideias foram registradas por seus discípulos, como Platão e Xenofonte.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>O Método Socrático</h2>
+            <p>O principal legado filosófico de Sócrates é o método socrático, uma técnica de questionamento que busca estimular a reflexão crítica e a análise lógica. Esse método consiste em fazer perguntas desafiadoras, com o objetivo de guiar a pessoa a uma compreensão mais profunda dos temas abordados. A técnica é fundamental para o desenvolvimento do raciocínio lógico e é considerada um precursor do método científico.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Principais Contribuições Filosóficas</h2>
+            <ul>
+                <li><strong>Método de Questionamento:</strong> A técnica socrática não visava apenas obter respostas, mas estimular o pensamento autônomo. Sócrates acreditava que o conhecimento verdadeiro só poderia ser alcançado através do questionamento incessante.</li>
+                <li><strong>Busca pela Virtude:</strong> Sócrates acreditava que a virtude era o conhecimento. Para ele, uma pessoa que sabe o que é verdadeiramente bom, age de maneira justa e ética. Sua ética estava centrada na ideia de que todos os homens devem buscar a verdade e o bem.</li>
+                <li><strong>Crítica à Democracia Ateniense:</strong> Sócrates questionava o sistema democrático de Atenas, especialmente o fato de que qualquer cidadão poderia se tornar líder, sem necessariamente ter a sabedoria ou o conhecimento necessários. Ele acreditava que a sabedoria era essencial para a liderança.</li>
+                <li><strong>A Fé na Razão:</strong> Sócrates tinha uma profunda crença na razão humana. Para ele, a razão deveria ser a ferramenta principal para compreender o mundo e encontrar as respostas para questões morais e existenciais.</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Vida Pessoal de Sócrates</h2>
+            <p>Sócrates era um homem simples e não dava importância à riqueza ou status social. Ele vivia de forma austera, muitas vezes desconsiderando os prazeres materiais da vida. Ele tinha uma esposa chamada Xantipa, que era conhecida por sua natureza impetuosa. Sócrates também teve filhos, mas seu foco estava principalmente em sua filosofia e em ensinar as pessoas a questionar e a refletir sobre suas próprias vidas.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>A Morte de Sócrates</h2>
+            <p>Em 399 a.C., Sócrates foi condenado à morte por corromper a juventude de Atenas e por não reconhecer os deuses da cidade. Sua condenação foi altamente controversa, já que muitos acreditavam que ele estava sendo punido por suas críticas ao sistema político e às instituições de Atenas.</p>
+            <p>Ao ser sentenciado à morte, Sócrates teve a oportunidade de fugir, mas ele escolheu permanecer em Atenas e cumprir a sentença, defendendo que isso seria mais honroso do que escapar e desobedecer à lei. Sócrates morreu bebendo cicuta, um veneno, rodeado por seus discípulos, incluindo Platão, que registrou seus últimos momentos em uma das obras mais conhecidas de sua autoria, o "Fédon".</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Legado de Sócrates</h2>
+            <p>Embora Sócrates não tenha deixado nenhum escrito, seu legado filosófico é imenso. Suas ideias influenciaram profundamente Platão, Aristóteles e toda a filosofia ocidental subsequente. Seu método socrático e sua crença na busca incessante pela verdade continuam sendo fundamentais no desenvolvimento da filosofia e da educação até hoje.</p>
+            <p>Sócrates é muitas vezes considerado o "pai" da filosofia ocidental, e sua busca pela verdade e virtude continua a inspirar pensadores e pessoas ao redor do mundo. Seus ensinamentos estabeleceram a base para a ética e a epistemologia modernas, e sua vida e morte continuam a ser um símbolo de integridade intelectual e coragem moral.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Influência de Sócrates na Filosofia Moderna</h2>
+            <p>A influência de Sócrates na filosofia moderna é profunda e duradoura. Seu método de questionamento influenciou não apenas filósofos, mas também educadores, psicólogos e cientistas. O método socrático é amplamente utilizado em aulas de filosofia e em diversas outras disciplinas, como o direito, onde o questionamento contínuo é essencial para o desenvolvimento do raciocínio crítico.</p>
+            <p>Além disso, a ênfase de Sócrates na ética e na busca pelo bem continua a ser uma parte essencial das discussões filosóficas contemporâneas, especialmente nas áreas de ética aplicada e filosofia política.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Grandes Filósofos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var sidebar = document.getElementById("sidebar");
+            var content = document.getElementById("content");
+            sidebar.classList.toggle("show");
+            document.body.classList.toggle("menu-open");
+        }
+    </script>
+
+</body>
+</html>

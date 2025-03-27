@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>René Descartes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            transition: margin-left 0.3s;
+        }
+        header {
+            background: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+        .menu-btn {
+            position: absolute;
+            left: 20px;
+            top: 15px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background: #333;
+            padding-top: 60px;
+            transition: left 0.3s ease-in-out;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            border-bottom: 1px solid #444;
+            transition: background 0.3s;
+        }
+        .sidebar a:hover {
+            background: #ffd700;
+            color: #222;
+        }
+        .sidebar.show {
+            left: 0;
+        }
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .content-section {
+            margin-bottom: 30px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #222;
+            color: white;
+            margin-top: 20px;
+        }
+        .menu-open {
+            margin-left: 250px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <h1>René Descartes</h1>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+        <a href="javascript:void(0)" onclick="toggleMenu()">✖ Fechar</a>
+        <a href="index.html#inicio">Início</a>
+        <a href="index.html#filosofos">Filósofos</a>
+        <a href="index.html#sobre">Sobre o site</a>
+        <a href="index.html#contato">Contato</a>
+    </div>
+
+    <main id="content">
+        <section class="content-section">
+            <h2>Quem foi René Descartes?</h2>
+            <p>René Descartes (1596-1650) foi um filósofo, matemático e cientista francês, frequentemente considerado o pai da filosofia moderna. Ele teve um grande impacto na filosofia e na ciência, especialmente no desenvolvimento da geometria analítica e na concepção da dúvida como método filosófico.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>A Filosofia de Descartes</h2>
+            <p>Descartes é mais conhecido pelo seu famoso princípio "Cogito, ergo sum" ("Penso, logo existo"), que propôs como a base indubitável para todo o conhecimento. Ele buscou estabelecer uma fundação segura para a ciência e a filosofia, utilizando a dúvida sistemática. Descartes acreditava que a razão e a dúvida eram os meios para se chegar à verdade absoluta.</p>
+            <p>Ao duvidar de tudo, inclusive da existência do mundo e até de sua própria existência, Descartes chegou à conclusão de que a única coisa que não poderia ser duvidada era o fato de que ele estava pensando. Isso levou à famosa frase "Cogito, ergo sum" e à ideia de que o pensamento é a base da existência.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Contribuições para a Ciência</h2>
+            <p>Descartes fez contribuições significativas para várias áreas da ciência, como a física e a matemática. Ele desenvolveu a geometria analítica, que combina álgebra e geometria para resolver problemas espaciais. Essa descoberta foi fundamental para o avanço da matemática e influenciou profundamente a física e a engenharia.</p>
+            <p>Na física, Descartes propôs teorias sobre o movimento e a natureza da matéria, defendendo que tudo no universo era composto de partículas materiais em movimento. Embora muitas de suas ideias não tenham se mantido com o tempo, ele foi um dos primeiros a aplicar a matemática para explicar fenômenos naturais, estabelecendo um novo paradigma científico.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>A Dúvida Metódica</h2>
+            <p>A principal inovação de Descartes foi o método da dúvida metódica. Ele duvidava de tudo, incluindo da existência de Deus e do mundo material, até que fosse capaz de estabelecer uma base segura e indubitável para o conhecimento. Esse método, descrito em sua obra mais famosa, *Meditations on First Philosophy*, serviu para solidificar a filosofia moderna, separando o pensamento humano da teologia medieval e da filosofia aristotélica.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>A Relação com Deus</h2>
+            <p>Embora Descartes tenha sido um racionalista, ele também acreditava em Deus e via a existência de um ser supremo como uma parte essencial de sua filosofia. Ele argumentava que, para que o conhecimento fosse possível, Deus teria que existir para garantir que a nossa razão estivesse, de fato, em contato com a verdade.</p>
+            <p>Em seus escritos, Descartes também ofereceu uma prova ontológica para a existência de Deus, argumentando que a ideia de um ser perfeito e infinito só poderia ter sido colocada em nossa mente por um ser que de fato possuísse essas qualidades.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Legado de Descartes</h2>
+            <p>O impacto de Descartes na filosofia moderna não pode ser subestimado. Sua ênfase na razão e na dúvida como meio de alcançar a verdade pavimentou o caminho para muitos filósofos subsequentes, como Spinoza, Leibniz e Kant. Descartes também influenciou profundamente a ciência, ajudando a estabelecer os fundamentos do método científico moderno, que enfatiza a observação e a experimentação empírica.</p>
+            <p>Embora algumas de suas teorias tenham sido superadas ou reformuladas por pensadores posteriores, Descartes permanece uma figura central na história da filosofia e da ciência, sendo considerado um dos pilares do pensamento moderno.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Grandes Filósofos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var sidebar = document.getElementById("sidebar");
+            var content = document.getElementById("content");
+            sidebar.classList.toggle("show");
+            document.body.classList.toggle("menu-open");
+        }
+    </script>
+
+</body>
+</html>
